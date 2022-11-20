@@ -46,7 +46,6 @@ var init = () => {
         tau = theory.createUpgrade(2, currency, new ExponentialCost(1, Math.log2(2)));
         tau.getDescription = (_) => Utils.getMath(getDesc(tau.level));
         tau.getInfo = (amount) => Utils.getMathTo(getInfo(tau.level), getInfo(tau.level + amount));
-        refund() ;
     }
     /////////////////////
     // Permanent Upgrades
